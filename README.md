@@ -1,5 +1,6 @@
 # Latest Release Version
 Action for getting latest (pre-)release's version of a repository, customized property name such as 'created_at' supported.
+Updated for GHA's set-output deprecation.
 # Usage
 ```yaml
 - name: Get latest release's version(tag_name) of \
