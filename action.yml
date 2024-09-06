@@ -49,7 +49,7 @@ runs:
         fi
         echo "TAG_NAME: $TAG_NAME"
         echo "VERSION: $VERSION"
-        echo "::set-output name=tag_name::$(echo $TAG_NAME)"
-        echo "::set-output name=version::$(echo $VERSION)"
+        echo "tag_name=$(echo $TAG_NAME)" >> $GITHUB_OUTPUT
+        echo "version=$(echo $VERSION)" >> $GITHUB_OUTPUT
       shell: bash
       id: main
